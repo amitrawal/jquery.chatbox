@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="css/chat.css" media="screen">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery.chatbox.js"></script>
+    <script src="js/chatbox_manager.js"></script>
+</head>
+<script type="text/javascript">
+     $(document).ready(function() {
+       var counter = 1, 
+        offset = 0;
+        chatbox_manager = new ChatboxManager();
+       $('#addChat').on('click', function(e) {
+         var id = 'chat_' + counter.toString();
+         var title = 'User ' + counter.toString();
+         chatbox_manager.addBox(id, title);
+         counter ++;       
+       });
+    });
+</script>
+<body>
+    <a id='addChat' href="#">Add Chat</a>
+    <div id="chat"></div>
+</body>
+</html>
