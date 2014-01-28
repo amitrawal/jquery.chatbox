@@ -1,7 +1,8 @@
 jquery.chatbox
 ==============
 
-PROTOTYPE jQuery plugin to create a chat box.
+jQuery plugin to create a chat box.
+=======
 
 Usage
 ------
